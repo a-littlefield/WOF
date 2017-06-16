@@ -11,6 +11,10 @@
 .letters {
 	display: inline-block;
 }
+.letters:hover {
+	color: magenta;
+	text-shadow: 2px 2px gray;
+}
 .letter-box {
 	text-align: center;
 	font-size: 50px;
