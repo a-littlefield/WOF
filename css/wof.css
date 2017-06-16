@@ -1,0 +1,13 @@
+#answer-box {
+  width: 100px;
+  height: 100px;
+  margin: 50px 0;
+  border: 5px solid gray; }
+
+.alphabet {
+  text-align: center; }
+
+.letters {
+  display: inline-block; }
+
+/*# sourceMappingURL=wof.css.map */
