@@ -5,40 +5,41 @@
 
 
 $(document).ready(function() {
-
-
-	function Game() {
-		this.wordArray = ['Aragorn', 'Halo', 'Kangaroo', 'something else else', 'something final'];
-		self = this
-		this.randomWord = function() {
-			return this.wordArray[Math.floor(Math.random() * this.wordArray.length)];
-		}//end of randomword fun
-		this.wordBox = function() {
-			let rando = self.randomWord();
-			for (var i = 0; i < rando.length; i++) {
-				$('#box1').text(rando[0]);
-				$('#box2').text(rando[1]);
-				$('#box3').text(rando[2]);
-				$('#box4').text(rando[3]);
-				$('#box5').text(rando[4]);
-				$('#box6').text(rando[5]);
-				$('#box7').text(rando[6]);
-				$('#box8').text(rando[7]);
-				$('#box9').text(rando[8]);
-				$('#box10').text(rando[9]);
-				$('#box11').text(rando[10]);
-				$('#box12').text(rando[11]);
-				console.log(rando);
-			}
-		}
-
-	
-	};//end of Game obj
+	let hide = $()
 	let game = new Game();
 	game.wordBox();
-	console.log(game.wordBox);
 
 
 
 
-})
+});
+
+function Game() {
+	this.wordArray = ['Aragorn', 'Halo', 'Kangaroo', 'Purple', 'Firework'];
+	self = this
+	this.randomWord = function() {
+		return this.wordArray[Math.floor(Math.random() * this.wordArray.length)];
+	}//end of randomword fun
+	this.wordBox = function() {
+		let rando = self.randomWord();
+		for (var i = 0; i < rando.length; i++) {
+			$('#box1').data('data-letter', rando[0]);
+			$('#box2').data('data-letter', rando[1]);
+			$('#box3').data('data-letter', rando[2]);
+			$('#box4').data('data-letter', rando[3]);
+			$('#box5').data('data-letter', rando[4]);
+			$('#box6').data('data-letter', rando[5]);
+			$('#box7').data('data-letter', rando[6]);
+			$('#box8').data('data-letter', rando[7]);
+			$('#box9').data('data-letter', rando[8]);
+			$('#box10').data('data-letter', rando[9]);
+			$('#box11').data('data-letter', rando[10]);
+			$('#box12').data('data-letter', rando[11]);
+		}
+	};
+	
+
+
+
+};//end of Game obj
+
