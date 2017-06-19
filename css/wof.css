@@ -1,21 +1,52 @@
+body {
+  background-image: url("http://www.valvigirl.net/wp-content/uploads/2016/10/Satta-Game-at-Satta-King-1680x664.jpg"); }
+
+#intro {
+  text-align: center;
+  color: #a3bcff;
+  margin-top: 9px; }
+
 #answer-box {
   width: 100px;
   height: 100px;
   margin: 50px 0;
-  border: 5px solid gray; }
+  border: 5px solid gray;
+  background: rgba(143, 231, 255, 0.22); }
 
 .alphabet {
   text-align: center; }
 
 .letters {
-  display: inline-block; }
+  display: inline-block;
+  color: #2e043f;
+  font-weight: bold; }
 
-.letters:hover {
+.letters:not(.alreadyClicked):not(.game-is-over):hover {
   color: magenta;
-  text-shadow: 2px 2px gray; }
+  text-shadow: 2px 2px black; }
 
 .letter-box {
   text-align: center;
-  font-size: 50px; }
+  font-size: 50px;
+  color: #00f5e4; }
+
+#hints {
+  margin-top: 50px;
+  text-align: center;
+  color: #00f583; }
+
+#tries {
+  height: 100px;
+  width: 250px;
+  margin-top: 100px;
+  margin-left: 35%;
+  color: #00f583;
+  text-shadow: 4px 4px 4px black; }
+
+#try1, #try2, #try3, #try4 {
+  display: inline-block; }
+
+.correct-box {
+  margin-left: 20px; }
 
 /*# sourceMappingURL=wof.css.map */
